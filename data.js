@@ -100,34 +100,34 @@ window.DAYS = [
 ];
 
 window.RESTAURANTS = [
-  { name: "Trattoria D'Ambrosio da Giuliana", addr: "Via Broseta 58, Bergamo", hours: "From 19:00, queue from 18:30.",
+  { cats: ["dinner"], name: "Trattoria D'Ambrosio da Giuliana", addr: "Via Broseta 58, Bergamo", hours: "From 19:00, queue from 18:30.",
     info: "No bookings, cash only.", check: "Check: Localore says to book.", price: "€", use: "Fri or Sat dinner" },
-  { name: "Ristorante Dal Carlo", addr: "Via San Lazzaro 8, Bergamo", tel: "035 242452", hours: "Closed Mondays.",
+  { cats: ["dinner","lunch"], name: "Ristorante Dal Carlo", addr: "Via San Lazzaro 8, Bergamo", tel: "035 242452", hours: "Closed Mondays.",
     price: "€€", use: "Dinner or Sunday B lunch" },
-  { name: "Osteria al GiGianca", addr: "Via Broseta 113, Bergamo", tel: "035 568 4928",
+  { cats: ["dinner"], name: "Osteria al GiGianca", addr: "Via Broseta 113, Bergamo", tel: "035 568 4928",
     hours: "Dinner from 19:30, closed Sundays.", price: "€€€", use: "Dinner" },
-  { name: "Antica Trattoria La Colombina", addr: "Via Borgo Canale 12, Bergamo", tel: "035 261402",
+  { cats: ["lunch"], name: "Antica Trattoria La Colombina", addr: "Via Borgo Canale 12, Bergamo", tel: "035 261402",
     hours: "Tue to Sun 12:00 to 14:15 and 19:30 to 22:15, closed Mondays.", price: "€€€", use: "Saturday lunch" },
-  { name: "Trattoria Parietti", addr: "Via Sudorno, Bergamo", addrNote: "Above Città Alta.", tel: "035 221072",
+  { cats: ["lunch"], name: "Trattoria Parietti", addr: "Via Sudorno, Bergamo", addrNote: "Above Città Alta.", tel: "035 221072",
     hours: "Sunday lunch 12:00 to 14:00.", info: "Parking very hard.", price: "€€", use: "Sunday B lunch" },
-  { name: "Il Circolino di Città Alta", addr: "Vicolo Sant'Agata 19, Bergamo", tel: "035 218568", use: "Backup" },
-  { name: "La Marianna", addr: "Largo Colle Aperto, Bergamo", use: "Gelato (stracciatella)", icon: "gelato" },
-  { name: "Balzer", addr: "Sentierone, Bergamo", use: "Café, torta Donizetti", icon: "coffee", mapName: "Caffè Balzer" }
+  { cats: ["dinner","lunch"], name: "Il Circolino di Città Alta", addr: "Vicolo Sant'Agata 19, Bergamo", tel: "035 218568", use: "Backup" },
+  { cats: ["sweet"], name: "La Marianna", addr: "Largo Colle Aperto, Bergamo", use: "Gelato (stracciatella)", icon: "gelato" },
+  { cats: ["sweet"], name: "Balzer", addr: "Sentierone, Bergamo", use: "Café, torta Donizetti", icon: "coffee", mapName: "Caffè Balzer" }
 ];
 
 window.EVENINGS = [
-  { day: "Fri or Sat", name: "Francesco Jodice \"Clichés\"", what: "Photography at Ex Monastero di Astino.",
+  { day: "Fri or Sat", days: ["fri","sat"], start: "18:30", name: "Francesco Jodice \"Clichés\"", what: "Photography at Ex Monastero di Astino.",
     addr: "Ex Monastero di Astino, Via Astino, Bergamo", details: "Free, daily 18:30 to 23:00.",
     url: "https://www.visitbergamo.net/en/oggetto/francesco-jodice-cliches/" },
-  { day: "Fri", name: "The Jazz Room", what: "Sinatra and Armstrong tribute at Daste.",
+  { day: "Fri", days: ["fri"], start: "?", name: "The Jazz Room", what: "Sinatra and Armstrong tribute at Daste.",
     addr: "Daste, Via Daste e Spalenga 15, Bergamo", details: "€32.", check: "Check, no start time listed.",
     url: "https://feverup.com/en/bergamo/the-jazz-room" },
-  { day: "Sat", top: true, name: "Calibro 35 \"Ellroy vs L.A.\"", what: "Concert at Druso.",
+  { day: "Sat", days: ["sat"], start: "22:00", top: true, name: "Calibro 35 \"Ellroy vs L.A.\"", what: "Concert at Druso.",
     addr: "Druso, Via Antonio Locatelli 17, Ranica", details: "Doors 20:30, show 22:00, €25.",
     url: "https://www.cheventi.it/eventi/2026-calibro-35-vs-la-in-concerto-al-druso-di-bergamo-ranica-bg/" },
-  { day: "Sat", name: "Born to Be '80s", what: "At NXT Station.", addr: "NXT Station, Piazzale degli Alpini, Bergamo",
+  { day: "Sat", days: ["sat"], start: "21:00", name: "Born to Be '80s", what: "At NXT Station.", addr: "NXT Station, Piazzale degli Alpini, Bergamo",
     details: "Free, 21:00 to 23:00.", url: "https://www.visitbergamo.net/en/oggetto/born-to-be-80s/" },
-  { day: "Sat", name: "The Emotional Gym", what: "Piano by Gloria Campaner, then talks (probably in Italian).",
+  { day: "Sat", days: ["sat"], start: "21:00", name: "The Emotional Gym", what: "Piano by Gloria Campaner, then talks (probably in Italian).",
     addr: "Via San Bernardino 141, Bergamo", details: "Free, 21:00 to 23:00.",
     url: "https://www.visitbergamo.net/en/oggetto/the-emotional-gym/" }
 ];

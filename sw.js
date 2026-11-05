@@ -1,10 +1,10 @@
 // Offline support: saves every page and photo on the phone the first time the app opens.
 // When you change the app, raise the version number so phones pick up the new files.
-var VERSION = "bergamo-v1";
+var VERSION = "bergamo-v2";
 var FILES = [
   "./",
   "index.html", "style.css", "app.js", "data.js", "credits.js", "manifest.webmanifest",
-  "icon-192.png", "icon-512.png", "apple-touch-icon.png",
+  "icon-192.png", "icon-512.png", "apple-touch-icon.png", "fonts/pjs-latin.woff2", "fonts/pjs-latin-ext.woff2",
   "img/battistero.jpg",
   "img/campanone.jpg",
   "img/casa_donizetti.jpg",

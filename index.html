@@ -6,27 +6,23 @@
 <meta name="referrer" content="no-referrer">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bergamo Weekend</title>
-<meta name="theme-color" content="#7a2e1f" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#141210" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="Bergamo">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="icon" href="icon-192.png">
+<link rel="preload" href="fonts/pjs-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
+<script>try{var t=JSON.parse(localStorage.getItem("theme"));if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body>
-<header class="top"><h1 id="title">Bergamo</h1></header>
-<main id="app" tabindex="-1"></main>
-<nav class="tabs" aria-label="Main">
-  <a href="#today" data-tab="today"><span aria-hidden="true">⏱️</span>Today</a>
-  <a href="#days" data-tab="days"><span aria-hidden="true">🗓️</span>Days</a>
-  <a href="#eat" data-tab="eat"><span aria-hidden="true">🍝</span>Eat</a>
-  <a href="#evenings" data-tab="evenings"><span aria-hidden="true">🌙</span>Evenings</a>
-  <a href="#more" data-tab="more"><span aria-hidden="true">☰</span>More</a>
-</nav>
+<header id="head"></header>
+<main id="app" class="wrap" tabindex="-1"></main>
+<nav id="nav" class="tabs" aria-label="Main"></nav>
 <script src="data.js"></script>
 <script src="credits.js"></script>
 <script src="app.js"></script>
